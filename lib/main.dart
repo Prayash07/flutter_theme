@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_theme/core/routes/route_generator.dart';
+import 'package:flutter_theme/core/theme/app_text_theme.dart';
 import 'package:flutter_theme/core/theme/custom_color_theme.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         extensions: <ThemeExtension<dynamic>>[
           CustomColors.light(),
+          AppTextTheme.light(),
         ],
       ),
       onGenerateRoute: AppRoutes.routeGenerator,
